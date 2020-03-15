@@ -1,0 +1,10 @@
+C:\Users\asus\source\repos\Appointment\Appointment\bin\Debug\Appointment.exe.config
+C:\Users\asus\source\repos\Appointment\Appointment\bin\Debug\Appointment.exe
+C:\Users\asus\source\repos\Appointment\Appointment\bin\Debug\Appointment.pdb
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.Form1.resources
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.Form2.resources
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.Properties.Resources.resources
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.exe
+C:\Users\asus\source\repos\Appointment\Appointment\obj\Debug\Appointment.pdb
