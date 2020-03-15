@@ -171,6 +171,7 @@
             this.beginorder_button.TabIndex = 10;
             this.beginorder_button.Text = "开始预约";
             this.beginorder_button.UseVisualStyleBackColor = true;
+            this.beginorder_button.Click += new System.EventHandler(this.beginorder_button_Click);
             // 
             // endorder_button
             // 
@@ -180,6 +181,7 @@
             this.endorder_button.TabIndex = 11;
             this.endorder_button.Text = "结束预约";
             this.endorder_button.UseVisualStyleBackColor = true;
+            this.endorder_button.Click += new System.EventHandler(this.endorder_button_Click);
             // 
             // order_label
             // 

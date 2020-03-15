@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Appointment
 {
@@ -68,6 +70,18 @@ namespace Appointment
             }
         }
 
-        
+        private void beginorder_button_Click(object sender, EventArgs e)
+        {
+            string M_str_sqlcon ="server=localhost;port=3306;user id=root;password=123456;database=test"; //根据自己的设置
+            MySqlConnection mysqlcon = new MySqlConnection(M_str_sqlcon);
+            mysqlcon.Open();
+        }
+
+        private void endorder_button_Click(object sender, EventArgs e)
+        {
+            string M_str_sqlcon = "server=localhost;port=3306;user id=root;password=123456;database=test"; //根据自己的设置
+            MySqlConnection mysqlcon = new MySqlConnection(M_str_sqlcon);
+            mysqlcon.Close();
+        }
     }
 }
