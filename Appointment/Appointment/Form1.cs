@@ -89,7 +89,7 @@ namespace Appointment
         {
             if (visited == true)
             {
-                MySqlConnection mysqlcon = new MySqlConnection("server=localhost;database=test;user=root;port=3306;password=123456");
+                MySqlConnection mysqlcon = new MySqlConnection("server=localhost;database=mask;user=root;port=3306;password=123456");
                 mysqlcon.Open();
 
                 string sql1 = "select count(*) from user where phone_num='" + textBox3_phone.Text + "'";
