@@ -19,7 +19,7 @@ namespace Appointment
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         bool visited = false;
@@ -39,7 +39,7 @@ namespace Appointment
 
             Form2 form2 = new Form2();
             form2.Show();
-            
+
         }
 
         private void textBox2_id_KeyPress(object sender, KeyPressEventArgs e)
@@ -66,7 +66,7 @@ namespace Appointment
             {
                 if (int.Parse(textBox4_count.Text) > iMax)//num就是传进来的值,如果大于上限（输入的值），那就强制为上限
                 {
-                   
+
                     textBox4_count.Text = (iMax).ToString();
                 }
             }
@@ -87,12 +87,12 @@ namespace Appointment
 
         private void order_button_Click(object sender, EventArgs e)
         {
-            if(visited == true)
+            if (visited == true)
             {
                 MySqlConnection mysqlcon = new MySqlConnection("server=localhost;database=test;user=root;port=3306;password=123456");
                 mysqlcon.Open();
 
-                string sql1 = "select count(*) from user where phone_num='"+ textBox3_phone.Text + "'";
+                string sql1 = "select count(*) from user where phone_num='" + textBox3_phone.Text + "'";
                 MySqlCommand cmd1 = new MySqlCommand(sql1, mysqlcon);
                 /*Int32 count = (Int32)cmd1.ExecuteScalar();*/
                 int count = Convert.ToInt32(cmd1.ExecuteScalar());
@@ -109,7 +109,7 @@ namespace Appointment
                     MySqlCommand cmd = new MySqlCommand(sql, mysqlcon);
                     cmd.ExecuteNonQuery();
                 }
-                
+
                 mysqlcon.Close();
 
 
@@ -118,8 +118,8 @@ namespace Appointment
             {
                 MessageBox.Show("预约时间未到，请点击开启预约按钮");
             }
+
         }
 
-        
     }
 }
