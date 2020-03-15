@@ -162,6 +162,7 @@
             this.order_button.TabIndex = 9;
             this.order_button.Text = "点击预约";
             this.order_button.UseVisualStyleBackColor = true;
+            this.order_button.Click += new System.EventHandler(this.order_button_Click);
             // 
             // beginorder_button
             // 

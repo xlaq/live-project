@@ -27,3 +27,5 @@ C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\bin\Debug\Go
 C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\bin\Debug\MySql.Data.xml
 C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\bin\Debug\Renci.SshNet.xml
 C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\obj\Debug\Appointment.csproj.CopyComplete
+C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\bin\Debug\System.Data.SqlClient.dll
+C:\Users\asus\Documents\GitHub\live-project\Appointment\Appointment\bin\Debug\System.Data.SqlClient.xml
