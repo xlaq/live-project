@@ -17,12 +17,14 @@ string M_str_sqlcon ="server=localhost;port=3306;user id=root;password=123456;da
             string num = textBox3_phone.Text;
             try{
                 mysqlcon.Open();
-                string sql = "(select subscribe from user where phone_num= '"+num+"')";
+                string sql = "(select subscribe from user where phone_num= '"+num+"')";//根据输入的手机号查询用户的预定计数
                 MySqlCommand cmd = new MySqlCommand(sql, mysqlcon);
                 int rdr =cmd.ExecuteNonQuery();
-                if ( rdr >= 0 ) {
+                if ( rdr >= 0 ) {//如果用户的预定计数大于0，则不能预约
                     MessageBox.Show("用户在前三次预约中预约成功，不能再次预约");
                 }
                 else{
-                    
+                    sql = "(update user set subscribe=4 where phone_num= '"+num+"')";//如果成功预约就根据手机号把用户的预约计数设为4
+                    MySqlCommand cmd1 = new MySqlCommand(sql, mysqlcon);
+                    cmd.ExecuteNonQuery();
                 }
